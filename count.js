@@ -1,17 +1,21 @@
+let Year=prompt("Enter the year");
+let Month=prompt("Enter the month (1-12)");
+let Day=prompt("Enter tha Day (1-31)");
 
+const enddate=new Date(Year,Month,Day);
 
 setInterval(countdown= () => {
     const startdate=new Date();
 let input=document.querySelectorAll("input");
+ const endDate=enddate;
 
-const enddate=new Date(2023,11,27);
 document.getElementById("date").innerText=enddate;
 
-const year=enddate.getFullYear()-startdate.getFullYear();
+const year=endDate.getFullYear()-startdate.getFullYear();
 
-const date=enddate.getDate()-startdate.getDate();
+const date=endDate.getDate()-startdate.getDate();
 
-const month=enddate.getMonth()-startdate.getMonth();
+const month=endDate.getMonth()-startdate.getMonth();
 
 const hours=24-startdate.getHours();
 
