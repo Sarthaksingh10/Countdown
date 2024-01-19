@@ -1,5 +1,5 @@
 let Year=prompt("Enter the year");
-let Month=prompt("Enter the month (1-12)");
+let Month=prompt("Enter the month (0-11)");
 let Day=prompt("Enter tha Day (1-31)");
 
 const enddate=new Date(Year,Month,Day);
